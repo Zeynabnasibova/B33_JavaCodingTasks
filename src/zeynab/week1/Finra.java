@@ -1,4 +1,4 @@
-package week1;
+package zeynab.week1;
 
 public class Finra {
 
