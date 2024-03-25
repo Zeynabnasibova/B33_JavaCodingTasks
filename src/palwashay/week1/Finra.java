@@ -1,6 +1,12 @@
-package week1;
+package Dmitry.week1;
 
 public class Finra {
+
+    public static void main(String[] args) {
+
+
+    }
+
 
     /*
 FINRA :

@@ -1,4 +1,4 @@
-package week1;
+package Dmitry.week1;
 
 public class Even_Odd {
 
