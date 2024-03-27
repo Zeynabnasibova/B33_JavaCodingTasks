@@ -18,7 +18,7 @@ public class Even_Odd {
 
         boolean is_odd = isOdd(15);
 
-        if(is_odd == true ){
+        if(is_odd ){
             System.out.println("Even");
     }else {
             System.out.println("Odd");
