@@ -18,9 +18,9 @@ public class Even_Odd_ReturnMethod {
        String result;
 
         if (num %2 == 0){
-            result = "Number " + num + " is even";
+            result = "even";
         }else{
-            result = "Number " + num + " is odd";
+            result = "odd";
         }
         return result;
     }
