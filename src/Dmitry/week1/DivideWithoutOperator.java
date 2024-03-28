@@ -17,17 +17,6 @@ public class DivideWithoutOperator {
         System.out.println("result   = " + result);
         System.out.println("reminder = " + x);
 
-
-
-
-
-
-
-
-
-
-
-
     }
 }
 
