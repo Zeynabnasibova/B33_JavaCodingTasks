@@ -13,8 +13,7 @@ public class Even_Odd_Numbers {
 
         Even_Odd_Numbers obj = new Even_Odd_Numbers();
 
-        System.out.println(obj.even_Odd(6));
-
+        System.out.println(obj.even_Odd(number));
     }
 
     public  String even_Odd(int number){
