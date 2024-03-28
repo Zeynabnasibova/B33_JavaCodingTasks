@@ -11,9 +11,10 @@ public class DivideWithoutOperator {
             x = x-y;
             result++;
         }
-
         System.out.println(result);
         System.out.println(x);
+        System.out.println("result  is " + result);
+        System.out.println("reminder will be " + x);
 
 
     }
