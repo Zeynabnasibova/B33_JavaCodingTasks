@@ -1,8 +1,7 @@
 package Dmitry.week2;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
+
 
 public class Number_SwapTwoNumbers {
 
@@ -12,7 +11,7 @@ public class Number_SwapTwoNumbers {
 
     public static void main(String[] args) {
 
-        //solution 1 -------------------------------
+        //solution 1
 
         int a = 10;
         int b = 20;
@@ -25,7 +24,10 @@ public class Number_SwapTwoNumbers {
         System.out.println("a = " + a);
         System.out.println("b = " + b);
 
-        //solution 2 -------------------------------
+
+        System.out.println("----------------------------------------------------------");
+
+        //solution 2
 
         int x = 10;
         int y = 20;
@@ -43,7 +45,9 @@ public class Number_SwapTwoNumbers {
         System.out.println("y new = " + y);
 
 
-        //solution 3 -------------------------------
+        System.out.println("----------------------------------------------------------");
+
+        //solution 3
 
         int k = 40;
         int m = 60;
