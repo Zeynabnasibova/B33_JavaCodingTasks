@@ -13,16 +13,22 @@ public class ReverseString {
         ReverseString obj = new ReverseString();
         System.out.println(obj.reverse(word));
     }
-
+/*
+Since the strings are immutable objects, we need to create another string to reverse them.
+The string class doesn't have a reverse method to reverse the string.
+So to reverse the String first, I will create a new string.
+Then, iterate through each character of the original string and put it in front of the new string made.
+And the new string is the reverse of the original string.
+ */
     public String reverse(String word){
 
-        String conteyner = "";
+        String reversedWord = "";
 
         for(int i = word.length()-1;i>=0;i-- ){
 
-            conteyner += word.charAt(i);
+            reversedWord += word.charAt(i);
 
         }
-        return conteyner;
+        return reversedWord;
     }
 }
