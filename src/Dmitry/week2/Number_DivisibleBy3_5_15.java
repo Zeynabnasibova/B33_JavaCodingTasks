@@ -38,10 +38,8 @@ public class Number_DivisibleBy3_5_15 {
 
             if (number%15==0) {
                 div15 += number + " ";
-
             } else if (number%3==0) {
                 div3 += number + " ";
-
             } else if (number%5==0){
                 div5 += number + " ";
             }
