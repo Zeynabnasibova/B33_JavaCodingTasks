@@ -17,15 +17,15 @@ negative number and return it as int
 
         //  int number = -123;
 
-        int reverse = 0;
+        int reverse = 0;//
 
         while (number != 0) {
 
-            int remainder = number % 10;
+            int remainder = number % 10;//123%10=3
 
-            reverse = reverse * 10 + remainder;
+            reverse = reverse * 10 + remainder;//0*10+3=3
 
-            number = number / 10;
+            number = number / 10;//123/10=12
 
         }
 

@@ -44,7 +44,7 @@ public class Number_DivisibleBy3_5_15 {
 
         for (int each : arr) {
 
-            if (each % 15 == 0 && each % 3 == 0) {
+            if (each % 15 == 0 ) {
                 divisibleBy15 += each + " ";
             }
 
