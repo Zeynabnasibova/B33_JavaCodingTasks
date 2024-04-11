@@ -8,18 +8,17 @@ public class Number_SwapTwoNumbers {
 
     //solution 1
     public static void main(String[] args) {
-        //Swap two variable' values without using a third variable
+        int a = 5;
+        int b = 10;
 
+        System.out.println("Before swapping: a = " + a + ", b = " + b);
 
-        int a = 10;
-        int b = 20;
-        System.out.println("first a: " + a);
-        System.out.println("first b: " + b);
-        a = a + b; //a is 30 now
-        b = a - b; //b is 10 now
-        a = a - b; //a is 20 now
-        System.out.println("new a: " + a);
-        System.out.println("new b: " + b);
+        // Swap without using a temporary variable
+        a = a + b;
+        b = a - b;
+        a = a - b;
+
+        System.out.println("After swapping: a = " + a + ", b = " + b);
 
 
     }
