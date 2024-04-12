@@ -16,7 +16,7 @@ public class primeNumber {
 
         boolean result = (ifPrimeMethod(number));
 
-        if (result == true){
+        if (result){
             System.out.println("Number " + number + " is Prime");
         } else {
             System.out.println("Number " + number + " is not Prime");
