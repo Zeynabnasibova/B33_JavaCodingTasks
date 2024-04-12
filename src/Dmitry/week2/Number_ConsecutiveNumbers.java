@@ -1,7 +1,5 @@
 package Dmitry.week2;
 
-import java.util.Arrays;
-
 public class Number_ConsecutiveNumbers {
 
     public static void main(String[] args) {
