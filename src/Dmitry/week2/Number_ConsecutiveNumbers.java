@@ -30,7 +30,6 @@ public class Number_ConsecutiveNumbers {
             } else {
                 System.out.println(number);
             }
-
         }
     }
 }
@@ -62,5 +61,3 @@ public class Number_ConsecutiveNumbers {
                                     17
                                     ....
      */
-
-
