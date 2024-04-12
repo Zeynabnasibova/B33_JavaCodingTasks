@@ -19,7 +19,7 @@ public class reverseNegativeNumber {
 
 //        // Method #3
 //        int reverse2 = reverseParselInt(-864);
-//        System.out.println("Method Rev. 3:  " + reverse2);
+//        System.out.println("Method Rev.3:  " + reverse2);
     }
 
     public static int reverseString(int number){
@@ -56,7 +56,7 @@ public class reverseNegativeNumber {
         String stringOfNumbers = String.valueOf(number);            // -864 String
         System.out.println("Straight Str:  " + stringOfNumbers);
 
-        int reverseInt = 0;
+        int reverseInt;
         String reverseStr = "";
 
         for (int j = stringOfNumbers.length()-1; j>0;  j--) {
