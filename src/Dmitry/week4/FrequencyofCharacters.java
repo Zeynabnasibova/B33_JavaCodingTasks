@@ -11,20 +11,21 @@ public class FrequencyofCharacters {
     }
 
     public static void frequencyOfCharacters(String chars) {
-        // String newCharactersString = "";
+
         for (int i = 0; i < chars.length(); i++) {
 
             char ch = chars.charAt(i); //A
-            int frequently = 1;
+            int frequently = 0;
 
-            for (int k = i + 1; k < chars.length(); k++) {
+            for (int k = i; k < chars.length(); k++) {
                 if (chars.charAt(k) == ch) {
                     frequently++;
+                }else{
+                    break;
                 }
             }
-            if (frequently != 0) {
-                System.out.print(ch + ":" + frequently + " ");
-            }
+            System.out.print(ch + ":" + frequently + " ");
+            i += frequently-1; // tricky moment I still don't understand how this line works
         }
     }
 }
