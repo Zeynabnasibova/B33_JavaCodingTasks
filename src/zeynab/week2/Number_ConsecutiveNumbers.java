@@ -1,7 +1,8 @@
-package mentor.week2;
+package zeynab.week2;
+
+import java.util.Scanner;
 
 public class Number_ConsecutiveNumbers {
-
 
     /*
     Write a function:
@@ -31,53 +32,40 @@ public class Number_ConsecutiveNumbers {
                                     17
                                     ....
      */
-    public static void main(String[] args) {
-       // solution(15);
-        int N = 30;
-        printNumbersWithConditions(N);
-    }
 
-    private static void solution(int N) {
+    public static void main(String[] args) {
+
+        System.out.println("Enter your number ");
+        Scanner input = new Scanner(System.in);
+        int N = input.nextInt();
+        consecutiveNums(N);
+    }
+    public static void consecutiveNums(int N) {
+
         String result = "";
+
         for (int i = 1; i <= N; i++) {
-            if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0)
+            if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {
                 result += "CodilityTestCoders\n";
-            else if (i % 2 == 0 && i % 3 == 0)
+            } else if (i % 2 == 0 && i % 3 == 0) {
                 result += "CodilityTest\n";
-            else if (i % 2 == 0 && i % 5 == 0)
+            } else if (i % 2 == 0 && i % 5 == 0) {
                 result += "CodilityCoders\n";
-            else if (i % 3 == 0 && i % 5 == 0)
+            } else if (i % 3 == 0 && i % 5 == 0) {
                 result += "TestCoders\n";
-            else if (i % 2 == 0)
+            } else if (i % 2 == 0) {
                 result += "Codility\n";
-            else if (i % 5 == 0)
+            } else if (i % 5 == 0) {
                 result += "Coders\n";
-            else if (i % 3 == 0)
+            } else if (i % 3 == 0) {
                 result += "Test\n";
-            else
+            } else {
                 result += i + "\n";
+            }
         }
+
         System.out.println(result);
     }
-    public static void printNumbersWithConditions(int N) {
-        for (int i = 1; i <= N; i++) {
-            String output = "";
-            if (i % 2 == 0) {
-                output += "Codility";
-            }
-            if (i % 3 == 0) {
-                output += "Test";
-            }
-            if (i % 5 == 0) {
-                output += "Coders";
-            }
-            if (output.equals("")) {
-                output += i;
-            }
-            System.out.println(output);
-        }
-    }
-
-    }
 
 
+}

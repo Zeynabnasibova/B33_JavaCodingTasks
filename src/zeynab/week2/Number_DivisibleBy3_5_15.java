@@ -1,4 +1,6 @@
-package mentor.week2;
+package zeynab.week2;
+
+import java.util.Scanner;
 
 public class Number_DivisibleBy3_5_15 {
 
@@ -24,26 +26,42 @@ public class Number_DivisibleBy3_5_15 {
     */
 
     public static void main(String[] args) {
-        printDivisibleNumbers(100);
+        System.out.println("Enter your number ");
+        Scanner input = new Scanner(System.in);
+        int num = input.nextInt();
+        solution(num);
     }
-
-    public static void printDivisibleNumbers(int maxNumber) {
+    public static void solution(int n) {
         String divisibleBy15 = "";
         String divisibleBy5 = "";
         String divisibleBy3 = "";
 
-        for (int i = 1; i <= maxNumber; i++) {
-            if (i % 15 == 0) {
-                divisibleBy15 += i + " ";
-            } else if (i % 5 == 0) {
-                divisibleBy5 += i + " ";
-            } else if (i % 3 == 0) {
-                divisibleBy3 += i + " ";
+        int[] arr = new int[n];
+
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = i + 1;
+        }
+
+        for (int each : arr) {
+
+            if (each % 15 == 0 ) {
+                divisibleBy15 += each + " ";
             }
+
+            if (each % 5 == 0 && each % 15 != 0) {
+                divisibleBy5 += each + " ";
+            }
+
+            if (each % 3 == 0 && each % 15 != 0) {
+                divisibleBy3 += each + " ";
+            }
+
         }
 
         System.out.println("Divisible By 15: " + divisibleBy15);
         System.out.println("Divisible By 5: " + divisibleBy5);
         System.out.println("Divisible By 3: " + divisibleBy3);
     }
+
+
 }
