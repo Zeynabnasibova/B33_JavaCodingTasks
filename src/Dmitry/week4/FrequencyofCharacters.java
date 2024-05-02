@@ -6,26 +6,28 @@ public class FrequencyofCharacters {
 
     public static void main(String[] args) {
 
-        String characters = "AAABBCDD";
-        frequencyOfCharacters(characters);
+        String string = "AAABBCDDAADDBBCCAAGGGGAAA";
+        frequencyOfCharacters(string);
     }
 
-    public static void frequencyOfCharacters(String chars) {
+    public static void frequencyOfCharacters(String str) {
+        String result = "";
+        for (int i = 0; i < str.length(); i++) {
 
-        for (int i = 0; i < chars.length(); i++) {
-
-            char ch = chars.charAt(i); //A
+            char ch = str.charAt(i); // 'A'
             int frequently = 0;
 
-            for (int k = i; k < chars.length(); k++) {
-                if (chars.charAt(k) == ch) {
+            if (result.contains(String.valueOf(ch))){
+                continue;
+            }
+
+            for (int k = i; k < str.length(); k++) {
+                if (str.charAt(k) == ch) {
                     frequently++;
-                }else{
-                    break;
                 }
             }
-            System.out.print(ch + ":" + frequently + " ");
-            i += frequently-1; // tricky moment I still don't understand how this line works
+            result += String.valueOf(ch) + ":" + frequently + " ";
         }
+        System.out.println(result + " <- our result");
     }
 }
