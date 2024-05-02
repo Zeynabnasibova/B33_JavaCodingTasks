@@ -8,18 +8,24 @@ public class findUnique {
     public static void main(String[] args) {
 
         String initialString = "AAABBBCCCDEF";
+        String finalString = findUniqueSymbols(initialString);
+
+        System.out.println("Final String: " + finalString);
+    }
+
+    public static String findUniqueSymbols (String initialArg){
+
         String uniqueSymbols = "";
 
-        for (int i = 0; i < initialString.length(); i++) {
+        for (int i = 0; i < initialArg.length(); i++) {
 
-            char ch = initialString.charAt(i); // A-A-A-B...
+            char ch = initialArg.charAt(i); // we are getting each symbol A-A-A-B...
 
-            if (initialString.indexOf(ch) == initialString.lastIndexOf(ch)) { // If index is last = true - it means that symbol is unique!
+            if (initialArg.indexOf(ch) == initialArg.lastIndexOf(ch)) { // If index is last = true - it means that symbol is unique!
                 uniqueSymbols += ch;
             }
         }
-        System.out.println("uniqueSymbols = " + uniqueSymbols);
-
+        return uniqueSymbols;
     }
 }
 
