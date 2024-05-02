@@ -8,13 +8,13 @@ public class reverse {
 
         String initialString = "ABCDEFGH";
 
-        String reversedResult = reverse(initialString);
+        String reversedResult = reverseString (initialString);
 
         System.out.println("ReversedResult: " + reversedResult);
 
     }
 
-    public static String reverse(String initialArg){
+    public static String reverseString (String initialArg){
         String reverseString = "";
         for (int i = initialArg.length()-1; i >=0; i--) {
             reverseString = reverseString + initialArg.charAt(i);
