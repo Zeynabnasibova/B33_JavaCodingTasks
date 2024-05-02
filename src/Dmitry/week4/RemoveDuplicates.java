@@ -16,15 +16,11 @@ public class RemoveDuplicates {
         String newString = ""; // declaration of new String variable to store the reversed String
 
         for (int i = 0; i < str.length(); i++) {
-            if (newString.contains(String.valueOf(str.charAt(i))) == false) { // convert char symbols to String by using method String.valueOf()
+            if (!newString.contains(String.valueOf(str.charAt(i)))) { // convert char symbols to String by using method String.valueOf()
                 newString += str.charAt(i);
             }
         }
         return newString;
     }
-
-
-
-
 }
 
