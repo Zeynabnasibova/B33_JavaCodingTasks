@@ -12,6 +12,4 @@ public class MapSortByValues {
 using the sort method.
      */
 
-
-
 }
