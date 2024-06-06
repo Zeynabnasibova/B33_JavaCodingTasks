@@ -6,11 +6,11 @@ public class sumOfDigits {
 
 
     public static void main(String[] args) {
-        System.out.println(sumOfDigits("12 java 5 apple 3"));
+        System.out.println(sumOfDigits1("12 java 5 apple 3"));
         System.out.println(getSumOfDigits2("12 java 5 apple 3"));
     }
 
-    public static int sumOfDigits(String s) {
+    public static int sumOfDigits1(String s) {
 
         //Write a method that can return the sum of the digits in a string
 
