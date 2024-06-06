@@ -21,7 +21,7 @@ public class arrayListSortDesc {
 
     public static void sortListDESC(List<Integer> list) {
 
-        int n = list.size(); // to learn the length of list
+        int n = list.size();
 
         for (int i = 0; i < n-1; i++) {    // 29, 29,
 
