@@ -49,10 +49,7 @@ if all requirements above are met, the method returns true, otherwise returns  f
     }
 
     public static boolean PasswordValidation2(String password) {
-        if ((password.length() < 6) || (password.contains(" ")) || (!password.matches(".*[A-Z].*")) || (!password.matches(".*[a-z].*")) || (!password.matches(".*[!@#$%^&*(),.?\":{}|<>].*")) || (!password.matches(".*\\d.*"))) {
-            return false;
-        }
-        return true; // if all requirements are met
+        return (password.length() >= 6) && (!password.contains(" ")) && (password.matches(".*[A-Z].*")) && (password.matches(".*[a-z].*")) && (password.matches(".*[!@#$%^&*(),.?\":{}|<>].*")) && (password.matches(".*\\d.*"));// if all requirements are met
     }
 
     public static boolean PasswordValidation3(String password) {
