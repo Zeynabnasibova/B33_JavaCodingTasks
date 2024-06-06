@@ -9,7 +9,7 @@ public class findUnique {
     public static void main(String[] args) {
 
 
-        System.out.println(findTheUnique("AAABBBCCCDEF"));
+        System.out.println(findTheUnique("AAABBBCCCDEF"));//A
     }
 
     public static String findTheUnique(String letter) {
@@ -18,7 +18,7 @@ public class findUnique {
         for (int i = 0; i < letter.length(); i++) {// in the outer loop String took first letter,then
             //
 
-            int count = 0;  // I give int variable inside the outer loop because I want every time reset.
+            int count = 0;  // I give int variable inside the outer loop because I want every time reset.//3
 
             for (int j = 0; j < letter.length(); j++) { //go inside the inner loop, and check whole String
 
