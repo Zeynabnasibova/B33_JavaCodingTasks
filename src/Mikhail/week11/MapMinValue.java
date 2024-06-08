@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MapMinValue {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         //Write a method that can return the minimum value from a map (DO NOT use sort method)
         Map<Character, Integer> testMap = new HashMap<>();
         testMap.put('A',5);
